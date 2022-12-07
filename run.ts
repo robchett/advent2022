@@ -44,6 +44,13 @@ var input = fileToLines('./inputs/06.txt');
 console.log('Day6 Part 1', run06_part1(input));
 console.log('Day6 Part 2', run06_part2(input));
 
+import {run_part1 as run07_part1} from './src/07';
+import {run_part2 as run07_part2} from './src/07';
+var input = fileToLines('./inputs/07.txt');
+
+console.log('Day7 Part 1', run07_part1(input));
+console.log('Day7 Part 2', run07_part2(input));
+
 
 function fileToLines(file: string): string[] {
     return fs.readFileSync(file).toString().replace(/\r/g, '').split("\n");
