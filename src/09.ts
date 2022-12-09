@@ -740,8 +740,8 @@ export function run_part2(input: string[]): number {
                 if (Math.abs(H.x - T.x) <= 1 && Math.abs(H.y - T.y) <= 1 ) {
                     continue;
                 }
-                let dist = Math.abs(H.x - T.x) + Math.abs(H.y - T.y)
-                if (dist == 3) {
+                let dist = Math.abs(H.x - T.x) + Math.abs(H.y - T.y);
+                if (dist >= 3) {
                     T.x += H.x > T.x ? 1 : -1;
                     T.y += H.y > T.y ? 1 : -1;
                 } else if (T.x == H.x) {
@@ -753,6 +753,5 @@ export function run_part2(input: string[]): number {
             positions.set(`${knots[9].x},${knots[9].y}`, true);
         }
     }
-
     return [...positions.values()].length;
 }
