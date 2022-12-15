@@ -91,6 +91,13 @@ var monkeys = [
 console.log('Day11 Part 2', run11_part2(monkeys, 17 * 7 * 13 * 2 * 19 * 5 * 11 * 3));
 
 
+
+import {run_part1 as run12_part1, run_part2 as run12_part2} from './src/12';
+var input = fileToLines('./inputs/12.txt');
+
+console.log('Day12 Part 1', run12_part1(input));
+console.log('Day12 Part 2', run12_part2(input));
+
 function fileToLines(file: string): string[] {
     return fs.readFileSync(file).toString().replace(/\r/g, '').split("\n");
 }
