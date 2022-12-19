@@ -1,4 +1,4 @@
-/** {title} */
+/** {day}: {name} */
 
 /**
 {article}
